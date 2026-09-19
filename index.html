@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Auto Atlas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <p class="eyebrow">The Global Car Encyclopedia</p>
+            <h1>THE AUTO ATLAS</h1>
+            <p class="subtitle">Explore iconic brands, legendary models, and body styles across automotive history.</p>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section class="hero-panel">
+            <h2>Discover the world of performance, heritage, and design</h2>
+            <p>Browse by manufacturer, body type, or model name to build your car atlas.</p>
+        </section>
+
+        <section class="gallery-panel panel">
+            <div class="section-heading">
+                <h3>Supercar gallery</h3>
+            </div>
+            <div id="galleryGrid" class="gallery-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="controls" aria-label="Atlas filters">
+            <label>
+                Brand
+                <select id="brandFilter">
+                    <option value="all">All brands</option>
+                </select>
+            </label>
+
+            <label>
+                Body type
+                <select id="bodyFilter">
+                    <option value="all">All body types</option>
+                </select>
+            </label>
+
+            <label class="search-field">
+                Search model
+                <input id="modelSearch" type="search" placeholder="Type a model name...">
+            </label>
+
+            <button id="clearFilters" class="clear-button" type="button">Clear filters</button>
+        </section>
+
+        <section class="stats" aria-label="Atlas statistics">
+            <div class="stat-box">
+                <strong id="brandTotal">0</strong>
+                <span>brands</span>
+            </div>
+            <div class="stat-box">
+                <strong id="modelTotal">0</strong>
+                <span>models</span>
+            </div>
+            <div class="stat-box">
+                <strong id="bodyTotal">0</strong>
+                <span>body types</span>
+            </div>
+        </section>
+
+        <section class="brand-panel">
+            <div class="section-heading">
+                <h3>Featured marques</h3>
+            </div>
+            <div id="brandGrid" class="brand-grid" aria-live="polite"></div>
+        </section>
+
+        <div class="encyclopedia-layout">
+            <aside class="panel brand-spotlight">
+                <div class="section-heading">
+                    <h3>Brand spotlight</h3>
+                </div>
+                <div id="brandDetail" class="brand-detail" aria-live="polite"></div>
+            </aside>
+
+            <section class="panel model-focus">
+                <div class="section-heading">
+                    <h3>Model encyclopedia</h3>
+                </div>
+                <div id="modelDetail" class="model-detail" aria-live="polite"></div>
+            </section>
+        </div>
+
+        <section class="models-panel">
+            <div class="section-heading">
+                <h3>Model guide</h3>
+            </div>
+            <div id="modelList" class="model-list" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <script src="css/js/data/brands.js"></script>
+    <script src="css/js/data/models.js"></script>
+    <script src="css/js/app.js"></script>
+</body>
+
+</html>
