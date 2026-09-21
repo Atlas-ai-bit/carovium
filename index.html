@@ -1,107 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAROVIUM</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="CAROVIUM — The Global Car Encyclopedia.">
+<title>CAROVIUM — The Global Car Encyclopedia</title>
+<style>
+:root{--bg:#080a0f;--panel:#11151d;--line:#252b36;--text:#f5f7fa;--muted:#9299a6;--accent:#d9ff3f;--max:1180px}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at 75% -10%,#283014 0,transparent 30%),var(--bg);color:var(--text);line-height:1.5}a{text-decoration:none;color:inherit}button,input{font:inherit}.container{width:min(var(--max),92%);margin:auto}header{position:sticky;top:0;z-index:10;background:#080a0fd9;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff12}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:23px;font-weight:950;letter-spacing:-1.5px}.logo span{color:var(--accent)}.navlinks{display:flex;gap:25px;align-items:center}.navlinks a{color:#b9bec8;font-size:13px;font-weight:700}.navlinks a:hover{color:#fff}.cta{border:1px solid #3b424e;border-radius:10px;padding:8px 13px}.hero{padding:100px 0 70px;text-align:center}.eyebrow{display:inline-flex;gap:8px;padding:7px 12px;border:1px solid #303743;border-radius:999px;color:#cbd0d8;font-size:10px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);margin-top:4px}.hero h1{font-size:clamp(48px,8vw,90px);line-height:.92;letter-spacing:-6px;margin:25px auto 20px}.accent{color:var(--accent)}.hero p{max-width:670px;margin:auto;color:var(--muted);font-size:17px}.search{max-width:760px;margin:34px auto 0;padding:7px;display:flex;background:#11151d;border:1px solid #343b47;border-radius:17px}.search input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:#fff;padding:14px}.search button{border:0;border-radius:11px;background:var(--accent);color:#111;font-weight:900;padding:0 21px}.hint{margin-top:10px;color:#5e6672;font-size:10px}.stats{margin-top:45px;display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--line)}.stat{padding:20px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat b{display:block;font-size:25px}.stat span{font-size:9px;color:#68717e;text-transform:uppercase;letter-spacing:1px}.section{padding:72px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:25px}.kicker{color:var(--accent);font-size:10px;font-weight:900;letter-spacing:1.6px;text-transform:uppercase}.head h2{font-size:clamp(30px,4vw,44px);line-height:1;letter-spacing:-2px;margin-top:7px}.head p{max-width:500px;color:var(--muted);font-size:13px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.chip{border:1px solid var(--line);border-radius:999px;background:#0d1016;color:#9da5b1;padding:8px 13px;font-size:11px}.chip:hover,.chip.active{background:#fff;color:#111;border-color:#fff}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.brand{position:relative;min-height:220px;padding:19px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(145deg,#151a23,#0e1117);transition:.2s}.brand:hover{transform:translateY(-4px);border-color:#444c58;box-shadow:0 20px 45px #0005}.mark{width:51px;height:51px;border-radius:13px;background:#f5f6f8;color:#101216;display:grid;place-items:center;font-weight:950;margin-bottom:16px}.type{position:absolute;right:14px;top:14px;color:#69717e;font-size:9px;text-transform:uppercase;letter-spacing:1px}.brand h3{font-size:17px}.country{color:#727a87;font-size:11px}.desc{color:#9ca4b0;font-size:11px;margin-top:11px}.models{display:flex;flex-wrap:wrap;gap:5px;margin-top:13px}.model{border:1px solid #292f39;border-radius:999px;padding:4px 7px;background:#0b0e13;color:#aeb5c0;font-size:9px}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.category{min-height:155px;padding:22px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(145deg,#151a23,#0e1117)}.category .icon{font-size:25px;margin-bottom:20px}.category h3{font-size:16px}.category p{color:var(--muted);font-size:11px;margin-top:5px}.feature{display:grid;grid-template-columns:1.3fr .7fr;gap:13px}.box{padding:30px;min-height:270px;border:1px solid var(--line);border-radius:20px;background:radial-gradient(circle at 80% 10%,#d9ff3f12,transparent 30%),linear-gradient(145deg,#171c25,#0e1117)}.box h3{font-size:27px;letter-spacing:-1.3px}.box p{margin-top:9px;color:var(--muted);font-size:13px}.points{margin-top:25px;display:grid;gap:9px;color:#b7bec8;font-size:12px}.points b{color:var(--accent);margin-right:8px}.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:25px}.mini div{background:#0b0e13;border:1px solid var(--line);padding:12px;border-radius:12px}.mini b{display:block;font-size:19px}.mini span{color:#69717e;font-size:9px;text-transform:uppercase}footer{border-top:1px solid var(--line);padding:30px 0 50px;color:#68717e;font-size:11px}.foot{display:flex;justify-content:space-between;gap:20px}.foot strong{color:#cbd0d8}.foot strong span{color:var(--accent)}.footlinks{display:flex;gap:18px}.empty{display:none;text-align:center;color:var(--muted);padding:45px}@media(max-width:950px){.grid{grid-template-columns:repeat(2,1fr)}.categories{grid-template-columns:repeat(2,1fr)}.feature{grid-template-columns:1fr}}@media(max-width:650px){.navlinks{display:none}.hero{padding:70px 0 50px}.hero h1{letter-spacing:-3px}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.grid,.categories{grid-template-columns:1fr}.head{display:block}.head p{margin-top:10px}.section{padding:55px 0}.foot{display:block}.footlinks{margin-top:14px}}
+</style>
 </head>
-
 <body>
-    <header class="site-header">
-        <div class="header-inner">
-            <p class="eyebrow">The Global Car Encyclopedia</p>
-            <h1>CAROVIUM</h1>
-            <p class="subtitle">Explore iconic brands, legendary models, and body styles across automotive history.</p>
-        </div>
-    </header>
-
-    <main class="page-shell">
-        <section class="hero-panel">
-            <h2>Discover the world of performance, heritage, and design</h2>
-            <p>Browse by manufacturer, body type, or model name to build your car atlas.</p>
-        </section>
-
-        <section class="gallery-panel panel">
-            <div class="section-heading">
-                <h3>Supercar gallery</h3>
-            </div>
-            <div id="galleryGrid" class="gallery-grid" aria-live="polite"></div>
-        </section>
-
-        <section class="controls" aria-label="Atlas filters">
-            <label>
-                Brand
-                <select id="brandFilter">
-                    <option value="all">All brands</option>
-                </select>
-            </label>
-
-            <label>
-                Body type
-                <select id="bodyFilter">
-                    <option value="all">All body types</option>
-                </select>
-            </label>
-
-            <label class="search-field">
-                Search model
-                <input id="modelSearch" type="search" placeholder="Type a model name...">
-            </label>
-
-            <button id="clearFilters" class="clear-button" type="button">Clear filters</button>
-        </section>
-
-        <section class="stats" aria-label="Atlas statistics">
-            <div class="stat-box">
-                <strong id="brandTotal">0</strong>
-                <span>brands</span>
-            </div>
-            <div class="stat-box">
-                <strong id="modelTotal">0</strong>
-                <span>models</span>
-            </div>
-            <div class="stat-box">
-                <strong id="bodyTotal">0</strong>
-                <span>body types</span>
-            </div>
-        </section>
-
-        <section class="brand-panel">
-            <div class="section-heading">
-                <h3>Featured marques</h3>
-            </div>
-            <div id="brandGrid" class="brand-grid" aria-live="polite"></div>
-        </section>
-
-        <div class="encyclopedia-layout">
-            <aside class="panel brand-spotlight">
-                <div class="section-heading">
-                    <h3>Brand spotlight</h3>
-                </div>
-                <div id="brandDetail" class="brand-detail" aria-live="polite"></div>
-            </aside>
-
-            <section class="panel model-focus">
-                <div class="section-heading">
-                    <h3>Model encyclopedia</h3>
-                </div>
-                <div id="modelDetail" class="model-detail" aria-live="polite"></div>
-            </section>
-        </div>
-
-        <section class="models-panel">
-            <div class="section-heading">
-                <h3>Model guide</h3>
-            </div>
-            <div id="modelList" class="model-list" aria-live="polite"></div>
-        </section>
-    </main>
-
-    <script src="css/js/data/brands.js"></script>
-    <script src="css/js/data/models.js"></script>
-    <script src="css/js/app.js"></script>
-</body>
-
-</html>
+<header><div class="container nav"><a class="logo" href="#">CARO<span>VIUM</span></a><nav class="navlinks"><a href="#brands">Brands</a><a href="#categories">Categories</a><a href="#about">About</a><a class="cta" href="#brands">Explore Cars</a></nav></div></header>
+<main>
+<section class="hero"><div class="container"><div class="eyebrow"><i class="dot"></i>The Global Car Encyclopedia</div><h1>Every car has a story.<br><span class="accent">Discover it.</span></h1><p>Explore automobile brands, models, body types and automotive history — all in one growing global encyclopedia.</p><form class="search" id="searchForm"><input id="search" type="search" placeholder="Search brands or models — e.g. Toyota, Golf, Mustang..."><button>Search</button></form><div class="hint">Try a brand name, model name or country.</div><div class="stats"><div class="stat"><b id="brandCount">0</b><span>Brands</span></div><div class="stat"><b id="modelCount">0</b><span>Featured Models</span></div><div class="stat"><b>30+</b><span>Countries</span></div><div class="stat"><b>∞</b><span>Stories to Explore</span></div></div></div></section>
+<section class="section" id="brands"><div class="container"><div class="head"><div><div class="kicker">Explore the database</div><h2>Car brands</h2></div><p>From everyday manufacturers to luxury, performance and electric specialists, start exploring the global automotive world.</p></div><div class="filters" id="filters"></div><div class="grid" id="grid"></div><div class="empty" id="empty">No brands or models match your search.</div></div></section>
+<section class="section" id="categories"><div class="container"><div class="head"><div><div class="kicker">Browse by type</div><h2>Find your kind of car</h2></div><p>Discover cars by the way they are built, driven and used.</p></div><div class="categories"><article class="category"><div class="icon">🚙</div><h3>SUVs</h3><p>Crossovers, family SUVs and serious off-roaders.</p></article><article class="category"><div class="icon">🏎️</div><h3>Sports & Performance</h3><p>Sports cars, supercars and hypercars.</p></article><article class="category"><div class="icon">⚡</div><h3>Electric</h3><p>EVs and electric-focused manufacturers.</p></article><article class="category"><div class="icon">🚗</div><h3>Sedans & Hatchbacks</h3><p>Daily drivers, compact cars and executive sedans.</p></article><article class="category"><div class="icon">🛻</div><h3>Pickups</h3><p>Work trucks, lifestyle pickups and heavy-duty machines.</p></article><article class="category"><div class="icon">🏁</div><h3>Motorsport</h3><p>Manufacturers and cars connected to racing.</p></article><article class="category"><div class="icon">👑</div><h3>Luxury</h3><p>Premium and ultra-luxury automobiles.</p></article><article class="category"><div class="icon">🌍</div><h3>Automotive History</h3><p>Generations, iconic models and manufacturer stories.</p></article></div></div></section>
+<section class="section" id="about"><div class="container"><div class="feature"><div class="box"><div class="kicker">What is CAROVIUM?</div><h3>A growing encyclopedia for the automotive world.</h3><p>CAROVIUM is being built as a structured place to discover the world's automobile brands and models — not just a list of cars.</p><div class="points"><div><b>01</b>Brand profiles and histories</div><div><b>02</b>Model pages and generations</div><div><b>03</b>Specifications and body types</div><div><b>04</b>Search, comparison and discovery</div></div></div><div class="box"><div class="kicker">The roadmap</div><h3>From homepage to encyclopedia.</h3><p>The homepage is only the beginning. Each brand will eventually lead into detailed model and generation pages.</p><div class="mini"><div><b>01</b><span>Brands</span></div><div><b>02</b><span>Models</span></div><div><b>03</b><span>Generations</span></div></div></div></div></div></section>
+</main>
+<footer><div class="container foot"><strong>CARO<span>VIUM</span> · The Global Car Encyclopedia</strong><div class="footlinks"><a href="#brands">Brands</a><a href="#categories">Categories</a><a href="#about">About</a></div></div></footer>
+<script>
+const brands=[
+['Toyota','Japan','Mainstream','TO','Corolla, Camry, RAV4, Land Cruiser'],['Volkswagen','Germany','Mainstream','VW','Golf, Polo, Passat, Tiguan'],['Ford','USA','Mainstream','FO','Mustang, F-150, Ranger, Bronco'],['Chevrolet','USA','Mainstream','CH','Corvette, Camaro, Silverado, Tahoe'],['Honda','Japan','Mainstream','HO','Civic, Accord, CR-V, City'],['Nissan','Japan','Mainstream','NI','GT-R, Rogue, Patrol, X-Trail'],['Hyundai','South Korea','Mainstream','HY','Elantra, Tucson, Santa Fe, Ioniq 5'],['Kia','South Korea','Mainstream','KI','Seltos, Sportage, Sorento, EV6'],['BMW','Germany','Luxury','BM','3 Series, 5 Series, 7 Series, X5'],['Mercedes-Benz','Germany','Luxury','MB','C-Class, E-Class, S-Class, G-Class'],['Audi','Germany','Luxury','AU','A4, A6, Q5, Q7'],['Lexus','Japan','Luxury','LX','ES, IS, RX, LX'],['Volvo','Sweden','Luxury','VO','S60, XC40, XC60, XC90'],['Porsche','Germany','Performance','PO','911, Taycan, Cayenne, Macan'],['Ferrari','Italy','Performance','FE','296 GTB, Roma, Purosangue, SF90'],['Lamborghini','Italy','Performance','LA','Revuelto, Urus, Huracán, Temerario'],['McLaren','United Kingdom','Performance','MC','750S, Artura, Senna, GTS'],['Aston Martin','United Kingdom','Performance','AM','Vantage, DB12, DBX, Valhalla'],['Maserati','Italy','Luxury','MA','Grecale, GranTurismo, MC20, Levante'],['Bentley','United Kingdom','Luxury','BE','Continental GT, Flying Spur, Bentayga'],['Rolls-Royce','United Kingdom','Luxury','RR','Phantom, Ghost, Cullinan, Spectre'],['Land Rover','United Kingdom','SUV','LR','Defender, Range Rover, Discovery'],['Jeep','USA','SUV','JE','Wrangler, Grand Cherokee, Compass, Gladiator'],['Subaru','Japan','SUV','SU','Forester, Outback, WRX, BRZ'],['Suzuki','Japan','Mainstream','SZ','Swift, Jimny, Vitara, Dzire'],['Mazda','Japan','Mainstream','MZ','Mazda3, CX-5, CX-60, MX-5'],['Mitsubishi','Japan','SUV','MI','Outlander, Pajero Sport, Triton'],['Renault','France','Mainstream','RE','Clio, Captur, Megane, Austral'],['Peugeot','France','Mainstream','PE','208, 308, 3008, 5008'],['Citroën','France','Mainstream','CI','C3, C4, C5 Aircross, Ami'],['Fiat','Italy','Mainstream','FI','500, Panda, Tipo, 600'],['Alfa Romeo','Italy','Performance','AR','Giulia, Stelvio, Tonale, Junior'],['Škoda','Czech Republic','Mainstream','SK','Fabia, Octavia, Superb, Kodiaq'],['SEAT','Spain','Mainstream','SE','Ibiza, Leon, Arona, Ateca'],['Tesla','USA','EV','TE','Model 3, Model Y, Model S, Model X'],['BYD','China','EV','BY','Atto 3, Dolphin, Seal, Han'],['Rivian','USA','EV','RI','R1T, R1S, R2, R3'],['Lucid','USA','EV','LU','Air, Gravity'],['Polestar','Sweden','EV','PS','Polestar 2, Polestar 3, Polestar 4'],['Geely','China','Mainstream','GE','Coolray, Monjaro, Emgrand'],['Chery','China','Mainstream','CY','Tiggo 4, Tiggo 7, Tiggo 8'],['MG','United Kingdom','Mainstream','MG','MG3, ZS, HS, Cyberster'],['Tata Motors','India','Mainstream','TA','Nexon, Punch, Harrier, Safari'],['Mahindra','India','SUV','MA','Thar, Scorpio, XUV700, BE 6'],['Maruti Suzuki','India','Mainstream','MS','Swift, Baleno, Fronx, Brezza'],['Genesis','South Korea','Luxury','GN','G70, G80, G90, GV70'],['Cadillac','USA','Luxury','CA','CT5, Escalade, Lyriq, Celestiq'],['Lincoln','USA','Luxury','LI','Corsair, Nautilus, Aviator, Navigator'],['Dodge','USA','Performance','DO','Charger, Challenger, Durango'],['Ram','USA','Truck','RA','1500, 2500, 3500'],['GMC','USA','Truck','GM','Sierra, Canyon, Yukon, Hummer EV'],['Mini','United Kingdom','Mainstream','MN','Cooper, Countryman, Aceman'],['Lotus','United Kingdom','Performance','LO','Emira, Eletre, Emeya, Evija'],['Bugatti','France','Performance','BU','Chiron, Tourbillon, Mistral, Bolide'],['Koenigsegg','Sweden','Performance','KO','Jesko, Gemera, Regera, CC850'],['Pagani','Italy','Performance','PA','Utopia, Huayra, Zonda'],['Rimac','Croatia','EV','RI','Nevera, Nevera R']
+];
+const grid=document.getElementById('grid'),filters=document.getElementById('filters'),input=document.getElementById('search'),empty=document.getElementById('empty');let active='All';
+document.getElementById('brandCount').textContent=brands.length;document.getElementById('modelCount').textContent=brands.reduce((n,b)=>n+b[4].split(', ').length,0)+'+';
+['All',...new Set(brands.map(b=>b[2]))].forEach(c=>{let x=document.createElement('button');x.className='chip'+(c==='All'?' active':'');x.textContent=c;x.onclick=()=>{active=c;document.querySelectorAll('.chip').forEach(y=>y.classList.remove('active'));x.classList.add('active');render()};filters.appendChild(x)});
+function render(){let q=input.value.trim().toLowerCase();let list=brands.filter(b=>(active==='All'||b[2]===active)&&b.join(' ').toLowerCase().includes(q));grid.innerHTML=list.map(b=>`<article class="brand"><div class="type">${b[2]}</div><div class="mark">${b[3]}</div><h3>${b[0]}</h3><div class="country">${b[1]}</div><div class="desc">Explore the ${b[0]} brand and its growing model directory.</div><div class="models">${b[4].split(', ').map(m=>`<span class="model">${m}</span>`).join('')}</div></article>`).join('');empty.style.display=list.length?'none':'block'}
+input.oninput=render;document.getElementById('searchForm').onsubmit=e=>{e.preventDefault();document.getElementById('brands').scrollIntoView({behavior:'smooth'})};render();
+</script>
+</body></html>
